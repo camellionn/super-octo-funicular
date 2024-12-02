@@ -7,6 +7,7 @@ import globals from "globals";
 /** @type {import("eslint").FlatConfig[]} */
 const config = [
   {
+    ignores: ["dist/"],
     files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
     languageOptions: {
       parser: tsParser,
