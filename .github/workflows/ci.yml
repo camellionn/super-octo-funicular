@@ -19,14 +19,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Use Node.js version 16 or the version you need
+          node-version: '18'
 
       - name: Install dependencies
+        working-directory: ./project  # Change to the project directory
         run: npm install  # Install npm dependencies
 
       - name: Run Build
+        working-directory: ./project  # Change to the project directory
         run: npm run build  # Run the build script
 
       - name: Run Lint
+        working-directory: ./project  # Change to the project directory
         run: npm run lint  # Run the linting script
-
