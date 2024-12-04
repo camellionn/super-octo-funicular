@@ -25,4 +25,5 @@ build: ## Target to build the project
 lint: ## Target to lint the project
 	@echo "Running linter..."
 	cd $(PROJECT_DIR) && $(NPM_BIN) run lint
+	
 
